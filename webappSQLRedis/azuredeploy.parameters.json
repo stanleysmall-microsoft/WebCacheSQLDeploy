@@ -1,0 +1,105 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscriptionId": {
+      "value": "9de7ded6-0ad3-43e6-87b8-17d93e3ff695"
+    },
+    "name": {
+      "value": "cawatest789"
+    },
+    "location": {
+      "value": "East US"
+    },
+    "hostingPlanName": {
+      "value": "ASP-todelete3-8092"
+    },
+    "serverFarmResourceGroup": {
+      "value": "todelete3"
+    },
+    "databaseName": {
+      "value": "cawatest789-database"
+    },
+    "cacheName": {
+      "value": "cawatest789-cache"
+    },
+    "ftpsState": {
+      "value": "FtpsOnly"
+    },
+    "sku": {
+      "value": "PremiumV2"
+    },
+    "skuCode": {
+      "value": "P1v2"
+    },
+    "workerSize": {
+      "value": ""
+    },
+    "workerSizeId": {
+      "value": ""
+    },
+    "numberOfWorkers": {
+      "value": "1"
+    },
+    "linuxFxVersion": {
+      "value": "DOTNETCORE|7.0"
+    },
+    "collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "sqlDbSkuName": {
+      "value": "GP_Gen5_2"
+    },
+    "sqlDbTierName": {
+      "value": "GeneralPurpose"
+    },
+    "serverName": {
+      "value": "cawatest789-server"
+    },
+    "serverUsername": {
+      "value": "cawatest789-server-admin"
+    },
+    "serverPassword": {
+      "value": null
+    },
+    "vnetName": {
+      "value": "cawatest789Vnet"
+    },
+    "privateEndpointSubnet": {
+      "value": "cawatest789Subnet"
+    },
+    "subnetForApp": {
+      "value": "cawatest789AppSubnet"
+    },
+    "subnetForDb": {
+      "value": ""
+    },
+    "privateEndpointNameForApp": {
+      "value": "cawatest789AppEndpoint"
+    },
+    "privateEndpointNameForDb": {
+      "value": "cawatest789DbEndpoint"
+    },
+    "privateEndpointNameForCache": {
+      "value": "cawatest789CacheEndpoint"
+    },
+    "privateDnsZoneNameForApp": {
+      "value": "privatelink.azurewebsites.net"
+    },
+    "privateDnsZoneNameForCache": {
+      "value": "privatelink.cache.windows.net"
+    },
+    "privateDnsZoneNameForDb": {
+      "value": "privatelink.database.windows.net"
+    },
+    "isCacheEnabled": {
+      "value": true
+    },
+    "isVnetEnabled": {
+      "value": true
+    },
+    "isPrivateEndpointForAppEnabled": {
+      "value": false
+    }
+  }
+}
