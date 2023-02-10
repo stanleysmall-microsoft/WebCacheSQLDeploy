@@ -1,27 +1,27 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "subscriptionId": {
-      "value": "9de7ded6-0ad3-43e6-87b8-17d93e3ff695"
+      "value": ""
     },
     "name": {
-      "value": "cawatest789"
+      "value": ""
     },
     "location": {
-      "value": "East US"
+      "value": ""
     },
     "hostingPlanName": {
-      "value": "ASP-todelete3-8092"
+      "value": ""
     },
     "serverFarmResourceGroup": {
-      "value": "todelete3"
+      "value": ""
     },
     "databaseName": {
-      "value": "cawatest789-database"
+      "value": ""
     },
     "cacheName": {
-      "value": "cawatest789-cache"
+      "value": ""
     },
     "ftpsState": {
       "value": "FtpsOnly"
@@ -31,12 +31,6 @@
     },
     "skuCode": {
       "value": "P1v2"
-    },
-    "workerSize": {
-      "value": ""
-    },
-    "workerSizeId": {
-      "value": ""
     },
     "numberOfWorkers": {
       "value": "1"
@@ -54,34 +48,34 @@
       "value": "GeneralPurpose"
     },
     "serverName": {
-      "value": "cawatest789-server"
+      "value": ""
     },
     "serverUsername": {
-      "value": "cawatest789-server-admin"
+      "value": ""
     },
     "serverPassword": {
-      "value": null
+      "value": ""
     },
     "vnetName": {
-      "value": "cawatest789Vnet"
+      "value": ""
     },
     "privateEndpointSubnet": {
-      "value": "cawatest789Subnet"
+      "value": ""
     },
     "subnetForApp": {
-      "value": "cawatest789AppSubnet"
+      "value": ""
     },
     "subnetForDb": {
       "value": ""
     },
     "privateEndpointNameForApp": {
-      "value": "cawatest789AppEndpoint"
+      "value": ""
     },
     "privateEndpointNameForDb": {
-      "value": "cawatest789DbEndpoint"
+      "value": ""
     },
     "privateEndpointNameForCache": {
-      "value": "cawatest789CacheEndpoint"
+      "value": ""
     },
     "privateDnsZoneNameForApp": {
       "value": "privatelink.azurewebsites.net"
