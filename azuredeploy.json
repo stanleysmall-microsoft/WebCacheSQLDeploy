@@ -262,7 +262,7 @@
                           {
                             "name": "[parameters('privateEndpointNameForCache')]",
                             "properties": {
-                              "privateLinkServiceId": "[resourceId('Microsoft.Cache/redis/', parameters('cacheName'))]",
+                              "privateLinkServiceId": "[resourceId('Microsoft.Cache/Redis/', parameters('cacheName'))]",
                               "groupIds": [
                                 "redisCache"
                               ]
@@ -296,12 +296,12 @@
                 }
               },
               "dependsOn": [
-                "[concat('Microsoft.Cache/redis/', parameters('cacheName'))]"
+                "[concat('Microsoft.Cache/Redis/', parameters('cacheName'))]"
               ]
             },
             {
               "name": "[parameters('cacheName')]",
-              "type": "Microsoft.Cache/redis",
+              "type": "Microsoft.Cache/Redis",
               "location": "[parameters('location')]",
               "apiVersion": "[variables('cacheApiVersion')]",
               "tags": {},
@@ -575,7 +575,7 @@
                 {
                   "type": "virtualNetworkLinks",
                   "apiVersion": "[variables('privateDnsApiVersion')]",
-                  "name": "[format('{0}-dblink', parameters('privateDnsZoneNameForCache'))]",
+                  "name": "[format('{0}-cachelink', parameters('privateDnsZoneNameForCache'))]",
                   "location": "global",
                   "dependsOn": [
                     "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForCache'))]"

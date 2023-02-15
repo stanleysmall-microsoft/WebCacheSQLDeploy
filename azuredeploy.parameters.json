@@ -81,7 +81,7 @@
       "value": "privatelink.azurewebsites.net"
     },
     "privateDnsZoneNameForCache": {
-      "value": "privatelink.cache.windows.net"
+      "value": "privatelink.redis.cache.windows.net"
     },
     "privateDnsZoneNameForDb": {
       "value": "privatelink.database.windows.net"
