@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "subscriptionId": {
+      "value": ""
+    },
+    "name": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "hostingPlanName": {
+      "value": ""
+    },
+    "serverFarmResourceGroup": {
+      "value": ""
+    },
+    "databaseName": {
+      "value": ""
+    },
+    "ftpsState": {
+      "value": "FtpsOnly"
+    },
+    "sku": {
+      "value": "PremiumV2"
+    },
+    "skuCode": {
+      "value": "P1v2"
+    },
+    "workerSize": {
+      "value": ""
+    },
+    "workerSizeId": {
+      "value": ""
+    },
+    "numberOfWorkers": {
+      "value": "1"
+    },
+    "linuxFxVersion": {
+      "value": "DOTNETCORE|7.0"
+    },
+    "collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "sqlDbSkuName": {
+      "value": "GP_Gen5_2"
+    },
+    "sqlDbTierName": {
+      "value": "GeneralPurpose"
+    },
+    "serverName": {
+      "value": ""
+    },
+    "serverUsername": {
+      "value": ""
+    },
+    "serverPassword": {
+      "value": null
+    },
+    "vnetName": {
+      "value": ""
+    },
+    "privateEndpointSubnet": {
+      "value": ""
+    },
+    "subnetForApp": {
+      "value": ""
+    },
+    "subnetForDb": {
+      "value": ""
+    },
+    "privateEndpointNameForApp": {
+      "value": ""
+    },
+    "privateEndpointNameForDb": {
+      "value": ""
+    },
+    "privateDnsZoneNameForApp": {
+      "value": "privatelink.azurewebsites.net"
+    },
+    "privateDnsZoneNameForDb": {
+      "value": "privatelink.database.windows.net"
+    },
+    "isVnetEnabled": {
+      "value": true
+    },
+    "isPrivateEndpointForAppEnabled": {
+      "value": false
+    }
+  }
+}
