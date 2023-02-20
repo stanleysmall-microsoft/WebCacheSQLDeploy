@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\cawa\\source\\azure-cache-redis-samples-main\\quickstart\\aspnet-core\\ContosoTeamStats\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\cawa\\source\\azure-cache-redis-samples-main\\quickstart\\aspnet-core\\ContosoTeamStats\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\cawa\\source\\azure-cache-redis-samples-main\\quickstart\\aspnet-core\\ContosoTeamStats\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.ContosoTeamStats.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.ContosoTeamStats.props",
+      "PackagePath": "build\\ContosoTeamStats.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ContosoTeamStats.props",
+      "PackagePath": "buildMultiTargeting\\ContosoTeamStats.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.ContosoTeamStats.props",
+      "PackagePath": "buildTransitive\\ContosoTeamStats.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<ContosoTeamStats.Models.Team>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.ActionLink("Create New", "Create")
+        </td>
+        <td>
+            @Html.ActionLink("Play Season", "Index", new { actionType = "playGames" })
+        </td>
+        <td>
+            @Html.ActionLink("Clear Cache", "Index", new { actionType = "clearCache" })
+        </td>
+        <td>
+            @Html.ActionLink("List from Cache", "Index", new { resultType = "teamsList" })
+        </td>
+        <td>
+            @Html.ActionLink("Sorted Set from Cache", "Index", new { resultType = "teamsSortedSet" })
+        </td>
+        <td>
+            @Html.ActionLink("Top 5 Teams from Cache", "Index", new { resultType = "teamsSortedSetTop5" })
+        </td>
+        <td>
+            @Html.ActionLink("Load from DB", "Index", new { resultType = "fromDB" })
+        </td>
+        <td>
+            @Html.ActionLink("Rebuild DB", "Index", new { actionType = "rebuildDB" })
+        </td>
+    </tr>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Losses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ties)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Losses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ties)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+    <tr><td colspan="5">@ViewBag.Msg</td></tr>
+</table>
