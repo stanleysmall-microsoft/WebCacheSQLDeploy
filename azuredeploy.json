@@ -677,7 +677,7 @@
                   "type": "SQLAzure"
                 },
                 "CacheConnection": {
-                  "value": "[concat(parameters('cacheName'),'.redis.cache.windows.net,abortConnect=false,ssl=true,password=', listKeys(resourceId('Microsoft.Cache/Redis', parameters('cacheName')), '2022-06-01').primaryKey)]",
+                  "value": "[concat(reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).hostName, ':', reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).sslPort, ',ssl=True,abortConnect=False,password=', listKeys(resourceId('Microsoft.Cache/redis', parameters('cacheName')), '2019-07-01').primaryKey)]",
                   "type": "Custom"
                 }
               }
