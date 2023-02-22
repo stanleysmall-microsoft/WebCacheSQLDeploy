@@ -1,9 +1,0 @@
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\ContosoTeamStats.exe
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\appsettings.json
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\ContosoTeamStats.dll
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\ContosoTeamStats.deps.json
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\ContosoTeamStats.runtimeconfig.json
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\ContosoTeamStats.pdb
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\Pipelines.Sockets.Unofficial.dll
-C:\Users\cawa\source\azure-cache-redis-samples-main\quickstart\aspnet-core\ContosoTeamStats\obj\Release\net7.0\PubTmp\Out\StackExchange.Redis.dll
