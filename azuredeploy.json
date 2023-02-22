@@ -89,9 +89,6 @@
     "privateDnsZoneNameForApp": {
       "type": "string"
     },
-    "privateDnsZoneNameForCache": {
-      "type": "string"
-    },
     "privateDnsZoneNameForDb": {
       "type": "string"
     }
@@ -281,7 +278,7 @@
                               {
                                 "name": "privatelink-redis-cache-windows-net",
                                 "properties": {
-                                  "privateDnsZoneId": "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForCache'))]"
+                                  "privateDnsZoneId": "[resourceId('Microsoft.Network/privateDnsZones', reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).hostName)]"
                                 }
                               }
                             ]
@@ -569,16 +566,16 @@
             {
               "type": "Microsoft.Network/privateDnsZones",
               "apiVersion": "[variables('privateDnsApiVersion')]",
-              "name": "[parameters('privateDnsZoneNameForCache')]",
+              "name": "[reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).hostName]",
               "location": "global",
               "resources": [
                 {
                   "type": "virtualNetworkLinks",
                   "apiVersion": "[variables('privateDnsApiVersion')]",
-                  "name": "[format('{0}-cachelink', parameters('privateDnsZoneNameForCache'))]",
+                  "name": "[format('{0}-cachelink', reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).hostName)]",
                   "location": "global",
                   "dependsOn": [
-                    "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForCache'))]"
+                    "[resourceId('Microsoft.Network/privateDnsZones', reference(resourceId('Microsoft.Cache/redis', parameters('cacheName'))).hostName)]"
                   ],
                   "properties": {
                     "virtualNetwork": {
